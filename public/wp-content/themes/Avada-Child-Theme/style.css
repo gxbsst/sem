@@ -1,0 +1,16 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+@font-face {
+    font-family: 'song';
+    src: url('./assets/SourceHanSansCN-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

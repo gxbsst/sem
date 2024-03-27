@@ -1,0 +1,33 @@
+# 忽略WordPress核心文件
+#/wp-admin/
+#/wp-includes/
+
+# 忽略wp-config.php文件，因为它包含敏感信息
+#wp-config.php
+
+# 忽略wp-content目录中的特定子目录
+wp-content/cache/
+wp-content/uploads/
+
+# 忽略常见的系统文件
+.DS_Store
+Thumbs.db
+
+# 忽略node_modules目录，如果你使用Node.js和npm
+node_modules
+
+# 忽略composer相关文件，如果你使用composer管理依赖
+vendor
+composer.lock
+
+# 忽略特定的备份文件
+*.bak
+*.swp
+
+# 忽略日志文件
+*.log
+
+# 忽略.env文件，如果你使用dotenv来管理环境变量
+.env
+
+.idea
