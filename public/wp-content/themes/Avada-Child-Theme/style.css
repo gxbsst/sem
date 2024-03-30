@@ -14,3 +14,62 @@ Text Domain:  Avada
     font-weight: normal;
     font-style: normal;
 }
+:root {
+    --header-height: 30px;
+}
+.s-header {
+    max-height: var(--header-height);
+    line-height: 1;
+}
+.s-header__nav {
+    height: var(--header-height);
+}
+
+.s-logo {
+    height: 80px;
+}
+
+@media (min-width: 768px) {
+    .s-news__cards .s-news__cards__item {
+        flex: 0 0 25%;
+    }
+
+    .s-news__cards .s-news__cards__item:first-child {
+        flex-basis: 50%;
+    }
+    .s-news__cards .s-news__cards__item:first-child .product-images, .s-news__cards .s-news__cards__item:nth-child(6) .product-images {
+        margin-bottom: -80px;
+    }
+    .s-news__cards .s-news__cards__item:nth-child(6) {
+        flex-basis: 50%;
+    }
+
+}
+.s-events__cards {
+   width: 1200px;
+}
+.s-events__cards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 86px;
+    height: 100%;
+    background-color: #FFF;
+    z-index: 10;
+}
+.s-events__cards {
+    width: 1132px !important;
+    max-width: 1132px !important;
+    margin-left: -86px !important;
+}
+.s-events__cards::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 86px;
+    height: 100%;
+    background-color: #FFF;
+    z-index: 1;
+}
