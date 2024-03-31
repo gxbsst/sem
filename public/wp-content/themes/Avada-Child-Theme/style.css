@@ -44,57 +44,73 @@ Text Domain:  Avada
         flex-basis: 50%;
     }
 
-}
-.s-events__cards {
-    --card-width: 206px;
-    --swiper-button-size: 34px;
-    --card-item-spacing: 30px;
-    width: calc(var(--card-width) * 5 + var(--card-item-spacing) * 5 ) !important;
-    max-width: calc(var(--card-width) * 5 + var(--card-item-spacing) * 5 ) !important;
-    /*width: cacl(var(--card-width) * 2 + 960px)  !important;*/
-    /*max-width: cacl(var(--card-width) * 2 + 960px)  !important;*/
-    /*margin-left: -var(--card-) !important;*/
-    transform: translateX(calc(var(--card-width) / 2 * -1 ));
-    border: 1x solid red !important;
-}
-.s-events__cards .s-events__cards__item {
-   width: var(--card-width) !important;
-}
-.s-events__cards .s-events__cards__item:hover {
-    box-shadow: -4px 0px 20px -10px rgba(112,108,112,.9);
-    border: 1px dashed  rgba(112,108,112,.9);
-    /*border-style: dashed;*/
-    box-sizing: border-box;
-}
-.s-events__cards::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(var(--card-width) );
-    height: 100%;
-    /*background-color: #FFF;*/
-    background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0.1) 100%);
-    z-index: 10;
-}
+    .s-events__cards {
+        --card-width: 206px;
+        --swiper-button-size: 34px;
+        --card-item-spacing: 30px;
+        width: calc(var(--card-width) * 5 + var(--card-item-spacing) * 5 ) !important;
+        max-width: calc(var(--card-width) * 5 + var(--card-item-spacing) * 5 ) !important;
+        /*width: cacl(var(--card-width) * 2 + 960px)  !important;*/
+        /*max-width: cacl(var(--card-width) * 2 + 960px)  !important;*/
+        /*margin-left: -var(--card-) !important;*/
+        transform: translateX(calc(var(--card-width) / 2 * -1 ));
+        border: 1x solid red !important;
+    }
+    .s-events__cards .s-events__cards__item {
+        width: var(--card-width) !important;
+        min-height: 260px;
+    }
+    .s-events__cards .s-events__cards__item:hover {
+        box-shadow: -4px 0px 20px -10px rgba(112,108,112,.9);
+        border: 1px dashed  rgba(112,108,112,.9);
+        /*border-style: dashed;*/
+        box-sizing: border-box;
+    }
+    .s-events__cards::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(var(--card-width) );
+        /*height: 100%;*/
+        min-height: 260px;
+        /*background-color: #FFF;*/
+        background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0.1) 100%);
+        z-index: 10;
+    }
 
-.s-events__cards::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: calc(var(--card-width) + var(--card-item-spacing));
-    height: 100%;
-    background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0.1) 100%);
-    z-index: 1;
-}
+    .s-events__cards::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(var(--card-width) + var(--card-item-spacing));
+        min-height: 260px;
+        background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0.1) 100%);
+        z-index: 1;
+    }
 
-.s-events__cards .awb-swiper-button-prev {
-    margin-left: calc(var(--card-width) + var(--card-item-spacing));
-    transform: translateX(-50%) !important;
-}
+    .s-events__cards .awb-swiper-button-prev {
+        margin-left: calc(var(--card-width) + var(--card-item-spacing));
+        transform: translateX(-50%) !important;
+    }
 
-.s-events__cards .awb-swiper-button-next {
-    margin-right: calc(var(--card-width) + var(--card-item-spacing));
-    transform: translateX(-50%) !important;
+    .s-events__cards .awb-swiper-button-next {
+        margin-right: calc(var(--card-width) + var(--card-item-spacing));
+        transform: translateX(-50%) !important;
+    }
+
+    .s-hero-content h1 {
+        font-family: 'songSY' !important;
+        font-weight: 400;
+        text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .s-research__cards .s-research__cards__item {
+        position: relative;
+        min-height: 200px;
+    }
+    .s-research__cards .s-research__cards__item .fusion-title {
+        margin-top: -200px;
+        z-index: 1;
+    }
 }

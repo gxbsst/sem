@@ -31,3 +31,6 @@ composer.lock
 .env
 
 .idea
+
+*.mp4
+*.zip
