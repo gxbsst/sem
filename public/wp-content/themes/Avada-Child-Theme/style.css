@@ -32,15 +32,18 @@ Text Domain:  Avada
 @media (min-width: 768px) {
     .s-news__cards .s-news__cards__item {
         flex: 0 0 25%;
+        min-height: 200px;
     }
 
     .s-news__cards .s-news__cards__item:first-child {
+        z-index: 1;
         flex-basis: 50%;
     }
     .s-news__cards .s-news__cards__item:first-child .product-images, .s-news__cards .s-news__cards__item:nth-child(6) .product-images {
         margin-bottom: -80px;
     }
     .s-news__cards .s-news__cards__item:nth-child(6) {
+        z-index: 1;
         flex-basis: 50%;
     }
 
