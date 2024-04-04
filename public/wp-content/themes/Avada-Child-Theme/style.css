@@ -8,6 +8,45 @@ Version: 1.0.0
 Text Domain:  Avada
 */
 
+// ===============global=============
+.relative {
+    position: relative !important;
+}
+.z-index-0 {
+    z-index: 0 !important;
+}
+// ===============子页面菜单=====================
+ .awb-menu {
+    --awb-active-color: #fff !important;
+}
+// ===============子页面第二菜单=====================
+.s_block__menu ul {
+    flex-direction: row;
+    flex: 1 0 30%;
+}
+.s_block__menu .awb-menu__main-a {
+    flex: 0 0 auto;
+    margin: 0;
+    width: auto;
+}
+.s_block__menu .awb-menu__main-li {
+   display: flex;
+}
+.s_block__menu ul .awb-menu__sub-ul {
+    flex: 0 0 auto;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: red;
+    position: static !important;
+    display: flex !important;
+    flex-direction: row !important;
+    left: 0;
+    z-index: 100 !important;
+}
+.s_block__menu ul .awb-menu__sub-ul > li {
+    /*flex: 0 0 auto;*/
+}
+
 @font-face {
     font-family: 'song';
     src: url('./assets/SourceHanSansCN-Medium.ttf');

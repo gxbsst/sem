@@ -6,7 +6,7 @@ define( 'WP_DEBUG_LOG', '/opt/homebrew/var/log/wordpress/php.log' );
 define( 'WP_DEBUG_DISPLAY', false );
 @ini_set( 'display_errors', 2 );
 define( 'SCRIPT_DEBUG', true );
-define('SAVEQUERIES', true);
+define('SAVEQUERIES',false);
 
 define('WP_HOME','http://localhost:8081');
 define('WP_SITEURL','http://localhost:8081');
