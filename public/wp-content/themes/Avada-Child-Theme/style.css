@@ -8,6 +8,20 @@ Version: 1.0.0
 Text Domain:  Avada
 */
 
+@font-face {
+    font-family: 'song';
+    src: url('./assets/SourceHanSerifHC-VF.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --header-height: 30px;
+    --color-primary: #B1040D;
+    --color-f3: #f3f3f3;
+}
+html.avada-is-100-percent-template #main.width-100 {
+    padding: 0 !important;
+}
 // ===============global=============
 .relative {
     position: relative !important;
@@ -15,9 +29,76 @@ Text Domain:  Avada
 .z-index-0 {
     z-index: 0 !important;
 }
+.bold {
+    font-weight: bold !important;
+}
+.pd-0 {
+    padding: 0 !important;
+}
+.pd-30 {
+    padding: 30px;
+}
+.pd-y-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+.mg-0 {
+    margin: 0 !important;
+}
+.font-song {
+    font-family: 'song' !important;
+}
+.color-primary {
+    color: var(--color-primary) !important;
+}
+.text-23 {
+   font-size: 23px !important;
+}
+.text-18 {
+    font-size: 18px !important;
+}
+.text-11 {
+   font-size: 11px !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.leading-none {
+    line-height: 1 !important;
+}
+.bg-f3f3f3 {
+    background-color: var(--color-f3, red) !important;
+}
+/* flex */
+.grow {
+    flex-grow: 1 !important;
+}
+.grow-0 {
+    flex-grow: 0 !important;
+}
+.shrink {
+    flex-shrink: 1 !important;
+}
+.shrink-0 {
+    flex-shrink: 0 !important;
+}
+.item-end {
+    align-items: flex-end !important;
+}
+.basis-auto {
+    flex-basis: auto !important;
+}
+.gap-10 {
+    column-gap: 10px !important;
+}
+
 // ===============子页面菜单=====================
- .awb-menu {
+.awb-menu {
     --awb-active-color: #fff !important;
+}
+.hover\:bg-primary:hover {
+    background-color: var(--color-primary, black) !important;
+    color: #FFF !important;
 }
 // ===============子页面第二菜单=====================
 .s_block__menu ul {
@@ -30,7 +111,7 @@ Text Domain:  Avada
     width: auto;
 }
 .s_block__menu .awb-menu__main-li {
-   display: flex;
+    display: flex;
 }
 .s_block__menu ul .awb-menu__sub-ul {
     flex: 0 0 auto;
@@ -47,15 +128,7 @@ Text Domain:  Avada
     /*flex: 0 0 auto;*/
 }
 
-@font-face {
-    font-family: 'song';
-    src: url('./assets/SourceHanSansCN-Medium.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-:root {
-    --header-height: 30px;
-}
+/* 首页 */
 .s-header {
     max-height: var(--header-height);
     line-height: 1;
