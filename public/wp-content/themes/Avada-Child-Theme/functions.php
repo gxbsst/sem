@@ -55,3 +55,48 @@ add_action('shutdown', function() {
     }
 });
 
+
+//add_filter('fusion_element_menu_content', 'custom_fusion_element_menu_content', 10, 2);
+
+function custom_fusion_element_menu_content($content, $args) {
+    // 这里是你的自定义逻辑
+    // 例如，你可以修改$content或者添加新的元素
+    // 确保返回修改后的$content
+
+    // 示例：添加一个新的菜单项
+//    $new_menu_item = '<li class="menu-item"><a href="#">新菜单项</a></li>';
+//    $content .= $new_menu_item;
+
+    // 使用正则表达式检查并替换
+// 这里的正则表达式假定<nav>标签中只有一个class属性，并且s_block__menu如果存在，会出现在class列表中
+// 如果<nav>标签中包含s_block__menu类，则所有其他类都会被移除，只保留这一个
+//    $pattern = '/(<nav[^>]*class="[^"]*)\b(?!s_block__menu\b)[^"]*([^"]*s_block__menu[^"]*)(")/i';
+//    $replacement = '$1$2$3';
+//// 如果s_block__menu在class中，则进行替换
+//    if (preg_match($pattern, $conten)) {
+//        $conten = preg_replace($pattern, '$1s_block__menu$3', $conten);
+//    }
+//
+
+    $dom = new DOMDocument();
+    @$dom->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'));
+
+// Find the nav element
+    $nav = $dom->getElementsByTagName('nav')->item(0); // Assuming there's only one <nav>
+
+// Check if nav has class 's_block__menu'
+    if (strpos($nav->getAttribute('class'), 's_block__menu') !== false) {
+        // Set the class attribute to 's_block__menu' only
+        $nav->setAttribute('class', 's_block__menu');
+    } else {
+        // If 's_block__menu' is not found, you might want to keep the classes as they are or handle differently
+    }
+
+// Save the changes
+    $content = $dom->saveHTML();
+
+
+//    $dom = new DOMDocument();
+
+    return $content;
+}

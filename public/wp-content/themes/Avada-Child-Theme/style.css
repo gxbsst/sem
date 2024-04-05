@@ -45,6 +45,9 @@ html.avada-is-100-percent-template #main.width-100 {
 .mg-0 {
     margin: 0 !important;
 }
+.ml-20 {
+    margin-left: 20px !important;
+}
 .font-song {
     font-family: 'song' !important;
 }
@@ -88,6 +91,9 @@ html.avada-is-100-percent-template #main.width-100 {
 .basis-auto {
     flex-basis: auto !important;
 }
+.basis-auto {
+    flex-basis: auto !important;
+}
 .gap-10 {
     column-gap: 10px !important;
 }
@@ -105,12 +111,19 @@ html.avada-is-100-percent-template #main.width-100 {
     flex-direction: row;
     flex: 1 0 30%;
 }
+
 .s_block__menu .awb-menu__main-a {
     flex: 0 0 auto;
     margin: 0;
     width: auto;
 }
 .s_block__menu .awb-menu__main-li {
+    display: flex;
+}
+.s_block__menu .awb-menu__main-li:not(:has(:where(.current-menu-item))){
+    display: none;
+}
+.s_block__menu .awb-menu__main-li.current-menu-item {
     display: flex;
 }
 .s_block__menu ul .awb-menu__sub-ul {
@@ -126,6 +139,7 @@ html.avada-is-100-percent-template #main.width-100 {
 }
 .s_block__menu ul .awb-menu__sub-ul > li {
     /*flex: 0 0 auto;*/
+    /*background: red;*/
 }
 
 /* 首页 */
@@ -140,6 +154,14 @@ html.avada-is-100-percent-template #main.width-100 {
 .s-logo {
     height: 80px;
 }
+
+/*如果不设置， 导航菜单的hover会有bug*/
+/*菜单会突然消失*/
+.fusion-tb-page-title-bar {
+    position: relative;
+    z-index: 1;
+}
+
 
 @media (min-width: 768px) {
     .s-news__cards .s-news__cards__item {

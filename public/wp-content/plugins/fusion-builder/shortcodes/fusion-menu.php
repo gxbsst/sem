@@ -328,6 +328,7 @@ if ( fusion_is_element_enabled( 'fusion_menu' ) ) {
 
 					$html .= '<nav ' . FusionBuilder::attributes( 'menu-shortcode' ) . '>';
 
+
 					$menu_markup = wp_nav_menu( $this->fetch_menu_args() );
 
 					// Add search overlay form as direct child of <nav>.
