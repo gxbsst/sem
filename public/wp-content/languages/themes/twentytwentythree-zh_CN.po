@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"X-Generator: GlotPress/4.0.0\n"
 "Language: zh_CN\n"
 "Project-Id-Version: Themes - Twenty Twenty-Three\n"
 
@@ -21,15 +21,19 @@ msgstr "Twenty Twenty-Three 的设计只在充分利用 WordPress 6.1 中引入�
 msgid "Twenty Twenty-Three"
 msgstr "Twenty Twenty-Three"
 
-#: theme.json
-msgctxt "Template part name"
-msgid "Post Meta"
-msgstr "文章 Meta"
+#. Translators: WordPress link.
+#: patterns/footer-default.php:19
+msgid "Proudly powered by %s"
+msgstr "自豪地采用 %s"
 
-#: theme.json
-msgctxt "Template part name"
-msgid "Comments"
-msgstr "评论"
+#: patterns/hidden-404.php:22 patterns/hidden-no-results.php:14
+msgid "Search"
+msgstr "搜索"
+
+#: patterns/hidden-404.php:22 patterns/hidden-no-results.php:14
+msgctxt "label"
+msgid "Search"
+msgstr "搜索"
 
 #: theme.json
 msgctxt "Template part name"
@@ -37,14 +41,19 @@ msgid "Footer"
 msgstr "页脚"
 
 #: theme.json
+msgctxt "Custom template name"
+msgid "Blank"
+msgstr "空白页面"
+
+#: theme.json
 msgctxt "Template part name"
 msgid "Header"
 msgstr "页眉"
 
-#: theme.json
-msgctxt "Font family name"
-msgid "Source Serif Pro"
-msgstr "Source Serif Pro"
+#: patterns/hidden-404.php:13
+msgctxt "Error code for a webpage that is not found."
+msgid "404"
+msgstr "404"
 
 #: theme.json
 msgctxt "Font family name"
@@ -53,8 +62,13 @@ msgstr "系统字体"
 
 #: theme.json
 msgctxt "Font family name"
-msgid "Inter"
-msgstr "Inter"
+msgid "Source Serif Pro"
+msgstr "Source Serif Pro"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "DM Sans"
+msgstr "DM Sans"
 
 #: theme.json
 msgctxt "Font family name"
@@ -63,8 +77,14 @@ msgstr "IBM Plex Mono"
 
 #: theme.json
 msgctxt "Font family name"
-msgid "DM Sans"
-msgstr "DM Sans"
+msgid "Inter"
+msgstr "Inter"
+
+#: styles/block-out.json styles/canary.json styles/pilgrimage.json
+#: styles/sherbet.json
+msgctxt "Duotone name"
+msgid "Default filter"
+msgstr "默认筛选"
 
 #: theme.json
 msgctxt "Custom template name"
@@ -75,101 +95,6 @@ msgstr "404"
 msgctxt "Custom template name"
 msgid "Blog (Alternative)"
 msgstr "博客（替代）"
-
-#: theme.json
-msgctxt "Custom template name"
-msgid "Blank"
-msgstr "空白页面"
-
-#: styles/whisper.json
-msgctxt "Style variation name"
-msgid "Whisper"
-msgstr "Whisper"
-
-#: styles/sherbet.json
-msgctxt "Gradient name"
-msgid "Tertiary to Secondary to Primary Fixed"
-msgstr "点缀色到副色到主色（固定）"
-
-#: styles/sherbet.json
-msgctxt "Gradient name"
-msgid "Primary to Secondary to Tertiary Fixed"
-msgstr "主色到副色到点缀色（固定）"
-
-#: styles/sherbet.json
-msgctxt "Gradient name"
-msgid "Primary to Secondary to Tertiary"
-msgstr "主色到副色到点缀色"
-
-#: styles/sherbet.json
-msgctxt "Style variation name"
-msgid "Sherbet"
-msgstr "Sherbet"
-
-#: styles/pitch.json
-msgctxt "Font size name"
-msgid "2X Large"
-msgstr "2X 尺寸"
-
-#: styles/pitch.json
-msgctxt "Font size name"
-msgid "Extra Large"
-msgstr "特大号"
-
-#: styles/pitch.json
-msgctxt "Font size name"
-msgid "Large"
-msgstr "大号"
-
-#: styles/pitch.json
-msgctxt "Font size name"
-msgid "Medium"
-msgstr "中号"
-
-#: styles/pitch.json
-msgctxt "Font size name"
-msgid "small"
-msgstr "小号"
-
-#: styles/pitch.json
-msgctxt "Space size name"
-msgid "7"
-msgstr "7"
-
-#: styles/pitch.json
-msgctxt "Style variation name"
-msgid "Pitch"
-msgstr "Pitch"
-
-#: styles/pilgrimage.json
-msgctxt "Gradient name"
-msgid "Dots"
-msgstr "点渐变"
-
-#: styles/pilgrimage.json
-msgctxt "Gradient name"
-msgid "Base to Primary"
-msgstr "由基准色到主色"
-
-#: styles/pilgrimage.json
-msgctxt "Gradient name"
-msgid "Tertiary to Secondary"
-msgstr "由三级色到次色"
-
-#: styles/pilgrimage.json
-msgctxt "Gradient name"
-msgid "Secondary to Primary"
-msgstr "由次色到主色"
-
-#: styles/pilgrimage.json
-msgctxt "Gradient name"
-msgid "Primary to Secondary"
-msgstr "由主色到次色"
-
-#: styles/pilgrimage.json
-msgctxt "Style variation name"
-msgid "Pilgrimage"
-msgstr "Pilgrimage"
 
 #: styles/marigold.json
 msgctxt "Font size name"
@@ -221,69 +146,6 @@ msgctxt "Space size name"
 msgid "1"
 msgstr "1"
 
-#: styles/marigold.json
-msgctxt "Style variation name"
-msgid "Marigold"
-msgstr "Marigold"
-
-#: styles/grapes.json
-msgctxt "Style variation name"
-msgid "Grapes"
-msgstr "Grapes"
-
-#: styles/electric.json
-msgctxt "Style variation name"
-msgid "Electric"
-msgstr "Electric"
-
-#: styles/canary.json
-msgctxt "Style variation name"
-msgid "Canary"
-msgstr "Canary"
-
-#: styles/block-out.json styles/canary.json styles/pilgrimage.json
-#: styles/sherbet.json
-msgctxt "Duotone name"
-msgid "Default filter"
-msgstr "默认筛选"
-
-#: styles/block-out.json
-msgctxt "Style variation name"
-msgid "Block out"
-msgstr "Block out"
-
-#: theme.json styles/aubergine.json styles/block-out.json styles/canary.json
-#: styles/electric.json styles/grapes.json styles/marigold.json
-#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
-#: styles/whisper.json
-msgctxt "Color name"
-msgid "Tertiary"
-msgstr "点缀色"
-
-#: theme.json styles/aubergine.json styles/block-out.json styles/canary.json
-#: styles/electric.json styles/grapes.json styles/marigold.json
-#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
-#: styles/whisper.json
-msgctxt "Color name"
-msgid "Secondary"
-msgstr "副色"
-
-#: theme.json styles/aubergine.json styles/block-out.json styles/canary.json
-#: styles/electric.json styles/grapes.json styles/marigold.json
-#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
-#: styles/whisper.json
-msgctxt "Color name"
-msgid "Primary"
-msgstr "主色"
-
-#: theme.json styles/aubergine.json styles/block-out.json styles/canary.json
-#: styles/electric.json styles/grapes.json styles/marigold.json
-#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
-#: styles/whisper.json
-msgctxt "Color name"
-msgid "Contrast"
-msgstr "对比色"
-
 #: theme.json styles/aubergine.json styles/block-out.json styles/canary.json
 #: styles/electric.json styles/grapes.json styles/marigold.json
 #: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
@@ -312,35 +174,20 @@ msgctxt "Gradient name"
 msgid "Secondary to Base"
 msgstr "次要色到基准色"
 
-#: styles/aubergine.json
-msgctxt "Style variation name"
-msgid "Aubergine"
-msgstr "Aubergine"
+#: patterns/hidden-404.php:22 patterns/hidden-no-results.php:14
+msgctxt "placeholder for search field"
+msgid "Search..."
+msgstr "搜索…"
 
-#: patterns/post-meta.php:64
-msgctxt "Label for a list of post tags"
-msgid "Tags:"
-msgstr "标签："
-
-#: patterns/post-meta.php:48
-msgctxt "Preposition to show the relationship between the post and its author"
-msgid "by"
-msgstr "来自"
-
-#: patterns/post-meta.php:36
-msgctxt "Preposition to show the relationship between the post and its categories"
-msgid "in"
-msgstr "分类"
+#: patterns/hidden-comments.php
+msgctxt "Pattern title"
+msgid "Hidden Comments"
+msgstr "隐藏评论"
 
 #: patterns/post-meta.php:28
 msgctxt "Verb to explain the publication status of a post"
 msgid "Posted"
 msgstr "已发布"
-
-#: patterns/post-meta.php
-msgctxt "Pattern title"
-msgid "Post Meta"
-msgstr "文章 Meta"
 
 #: patterns/hidden-no-results.php:10
 msgctxt "Message explaining that there are no results returned from a search"
@@ -357,44 +204,15 @@ msgctxt "Title of comments section"
 msgid "Comments"
 msgstr "评论"
 
-#: patterns/hidden-comments.php
-msgctxt "Pattern title"
-msgid "Hidden Comments"
-msgstr "隐藏评论"
-
-#: patterns/hidden-404.php:22 patterns/hidden-no-results.php:14
-msgid "Search"
-msgstr "搜索"
-
-#: patterns/hidden-404.php:22 patterns/hidden-no-results.php:14
-msgctxt "placeholder for search field"
-msgid "Search..."
-msgstr "搜索…"
-
-#: patterns/hidden-404.php:22 patterns/hidden-no-results.php:14
-msgctxt "label"
-msgid "Search"
-msgstr "搜索"
-
 #: patterns/hidden-404.php:19
 msgctxt "Message to convey that a webpage could not be found"
 msgid "This page could not be found."
 msgstr "找不到此页面。"
 
-#: patterns/hidden-404.php:13
-msgctxt "Error code for a webpage that is not found."
-msgid "404"
-msgstr "404"
-
 #: patterns/hidden-404.php
 msgctxt "Pattern title"
 msgid "Hidden 404"
 msgstr "隐藏 404"
-
-#. Translators: WordPress link.
-#: patterns/footer-default.php:19
-msgid "Proudly powered by %s"
-msgstr "自豪地采用 %s"
 
 #: patterns/footer-default.php
 msgctxt "Pattern title"
@@ -415,6 +233,188 @@ msgstr "有任何预订建议吗？"
 msgctxt "Pattern title"
 msgid "Call to action"
 msgstr "行动号召"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Comments"
+msgstr "评论"
+
+#: styles/block-out.json
+msgctxt "Style variation name"
+msgid "Block out"
+msgstr "Block out"
+
+#: styles/canary.json
+msgctxt "Style variation name"
+msgid "Canary"
+msgstr "Canary"
+
+#: styles/marigold.json
+msgctxt "Style variation name"
+msgid "Marigold"
+msgstr "Marigold"
+
+#: styles/grapes.json
+msgctxt "Style variation name"
+msgid "Grapes"
+msgstr "Grapes"
+
+#: styles/electric.json
+msgctxt "Style variation name"
+msgid "Electric"
+msgstr "Electric"
+
+#: styles/aubergine.json
+msgctxt "Style variation name"
+msgid "Aubergine"
+msgstr "Aubergine"
+
+#: styles/pilgrimage.json
+msgctxt "Style variation name"
+msgid "Pilgrimage"
+msgstr "Pilgrimage"
+
+#: styles/pitch.json
+msgctxt "Font size name"
+msgid "2X Large"
+msgstr "2X 尺寸"
+
+#: styles/pitch.json
+msgctxt "Font size name"
+msgid "small"
+msgstr "小号"
+
+#: styles/pitch.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "中号"
+
+#: styles/pitch.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "大号"
+
+#: styles/pitch.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr "特大号"
+
+#: styles/pitch.json
+msgctxt "Space size name"
+msgid "7"
+msgstr "7"
+
+#: styles/pitch.json
+msgctxt "Style variation name"
+msgid "Pitch"
+msgstr "Pitch"
+
+#: styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Dots"
+msgstr "点渐变"
+
+#: styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Base to Primary"
+msgstr "由基准色到主色"
+
+#: styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Tertiary to Secondary"
+msgstr "由三级色到次色"
+
+#: styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Secondary to Primary"
+msgstr "由次色到主色"
+
+#: styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Primary to Secondary"
+msgstr "由主色到次色"
+
+#: theme.json styles/aubergine.json styles/block-out.json styles/canary.json
+#: styles/electric.json styles/grapes.json styles/marigold.json
+#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
+#: styles/whisper.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr "主色"
+
+#: theme.json styles/aubergine.json styles/block-out.json styles/canary.json
+#: styles/electric.json styles/grapes.json styles/marigold.json
+#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
+#: styles/whisper.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr "对比色"
+
+#: theme.json styles/aubergine.json styles/block-out.json styles/canary.json
+#: styles/electric.json styles/grapes.json styles/marigold.json
+#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
+#: styles/whisper.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr "副色"
+
+#: theme.json styles/aubergine.json styles/block-out.json styles/canary.json
+#: styles/electric.json styles/grapes.json styles/marigold.json
+#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
+#: styles/whisper.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr "点缀色"
+
+#: styles/sherbet.json
+msgctxt "Gradient name"
+msgid "Tertiary to Secondary to Primary Fixed"
+msgstr "点缀色到副色到主色（固定）"
+
+#: styles/sherbet.json
+msgctxt "Gradient name"
+msgid "Primary to Secondary to Tertiary Fixed"
+msgstr "主色到副色到点缀色（固定）"
+
+#: styles/sherbet.json
+msgctxt "Gradient name"
+msgid "Primary to Secondary to Tertiary"
+msgstr "主色到副色到点缀色"
+
+#: styles/sherbet.json
+msgctxt "Style variation name"
+msgid "Sherbet"
+msgstr "Sherbet"
+
+#: styles/whisper.json
+msgctxt "Style variation name"
+msgid "Whisper"
+msgstr "Whisper"
+
+#: patterns/post-meta.php
+msgctxt "Pattern title"
+msgid "Post Meta"
+msgstr "文章 Meta"
+
+#: patterns/post-meta.php:36
+msgctxt "Preposition to show the relationship between the post and its categories"
+msgid "in"
+msgstr "分类"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Post Meta"
+msgstr "文章 Meta"
+
+#: patterns/post-meta.php:64
+msgctxt "Label for a list of post tags"
+msgid "Tags:"
+msgstr "标签："
+
+#: patterns/post-meta.php:48
+msgctxt "Preposition to show the relationship between the post and its author"
+msgid "by"
+msgstr "来自"
 
 #. Author URI of the theme
 #: patterns/footer-default.php:20

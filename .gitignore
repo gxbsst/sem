@@ -34,3 +34,4 @@ composer.lock
 
 *.mp4
 *.zip
+public/wp-content/cache

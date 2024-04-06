@@ -1,4 +1,15 @@
 <?php
+
+define( 'WP_DEBUG', true );
+// define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_LOG', '/opt/homebrew/var/log/wordpress/php.log' );
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', 2 );
+define( 'SCRIPT_DEBUG', true );
+define('SAVEQUERIES',false);
+
+define('WP_HOME','http://localhost:8081');
+define('WP_SITEURL','http://localhost:8081');
 /**
  * The base configuration for WordPress
  *
@@ -27,10 +38,12 @@ define( 'DB_NAME', 'sem' );
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '51448888' );
+// define( 'DB_PASSWORD', '51448888' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
-define( 'DB_HOST', '127.0.0.1' );
+// define( 'DB_HOST', '101.34.172.68' );
+define( 'DB_HOST', '0.0.0.0' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
